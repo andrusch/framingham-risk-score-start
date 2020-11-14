@@ -327,7 +327,7 @@
         var rxCuis = [];
 
         for (i = 0; i < Object.keys(medications).length; i++) {
-            var code = /* Complete this code to extract the RxNorm CUI/code from each medication */
+            var code = medications[i].medicationCodeableConcept.coding[0].code; /* Complete this code to extract the RxNorm CUI/code from each medication */
             rxCuis.push(code);
         }                
         return rxCuis;
