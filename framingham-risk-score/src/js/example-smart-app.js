@@ -421,7 +421,7 @@
             typeof ob.valueCodeableConcept.coding != 'undefined' &&
             typeof ob.valueCodeableConcept.coding[0].display != 'undefined') {
 
-            return /* Complete this code to extract the value of 'display' for  tobacco smoking status */
+            return ob.valueCodeableConcept.coding[0].code;/* Complete this code to extract the value of 'display' for  tobacco smoking status */
 
         } else {
             return undefined;
