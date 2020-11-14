@@ -144,7 +144,10 @@
                     var smk_status;
 
                     if (typeof smk[0] != 'undefined') {
-
+                        // uses the text "current" to search free text of the observations
+                        // look for the work "current" to find out if the patient is a smoker
+                        // while not a good solution, text observations are difficult
+                        // to analyze.
                         if (getSmokingStatus(smk[0]).toLowerCase().includes("current")) {
                             smk_status = 1;
                         } else {
