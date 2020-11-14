@@ -31,6 +31,7 @@
         var con_women = 146.5933061;
 
         // Other variables
+        // RxNorm base query to compare medications
         var rxClassBase = "https://rxnav.nlm.nih.gov/REST/rxclass/class/byRxcui.json?rxcui="; // Base URL for RxClass API
       
         function onReady(smart) {
