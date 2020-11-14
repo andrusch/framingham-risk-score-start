@@ -71,7 +71,7 @@
                 });
                      
                 var meds = smart.patient.api.fetchAll({
-                    type: /* [Insert FHIR resource type here] */,
+                    type: "MedicationDispense",
                     query: {
                         status: "completed"
                         //code: 'http://www.nlm.nih.gov/research/umls/rxnorm|153666' // "irbesartan 150 MG Oral Tablet [Avapro]"
